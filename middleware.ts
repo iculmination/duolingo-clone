@@ -2,13 +2,13 @@
 
 // export default authMiddleware({
 //   publicRoutes: ["/"],
-// }); 
+// });
 
-// D E P R E C A T E D 
+// D E P R E C A T E D
 
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const isProtectedRoute = createRouteMatcher(["/dashboard(.*)", "/forum(.*)"]);
+const isProtectedRoute = createRouteMatcher(["/learn(.*)", "/courses(.*)"]);
 
 export default clerkMiddleware((auth, req) => {
   if (isProtectedRoute(req)) auth().protect();

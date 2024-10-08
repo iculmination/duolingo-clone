@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "db:studio": "npx drizzle-kit studio",
-    "db:push": "npx drizzle-kit push"
+    "db:push": "npx drizzle-kit push",
+    "db:seed": "tsx ./scripts/seed.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.6.3",
@@ -22,8 +23,10 @@
     "drizzle-orm": "^0.33.0",
     "lucide-react": "^0.446.0",
     "next": "14.2.13",
+    "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
+    "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -36,6 +39,7 @@
     "eslint-config-next": "14.2.13",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.1",
     "typescript": "^5"
   }
 }
