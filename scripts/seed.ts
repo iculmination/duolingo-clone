@@ -48,7 +48,8 @@ const main = async () => {
         unitId: 1,
         order: 2,
         title: "Verbs",
-      }, {
+      },
+      {
         id: 3,
         unitId: 1,
         order: 3,
@@ -59,7 +60,8 @@ const main = async () => {
         unitId: 1,
         order: 4,
         title: "Verbs",
-      }, {
+      },
+      {
         id: 5,
         unitId: 1,
         order: 5,
@@ -87,7 +89,7 @@ const main = async () => {
       {
         id: 1,
         challengeId: 1,
-        imageSrc: "/man.svg",
+        imageSrc: "/man.png",
         correctOption: true,
         text: "el hombre",
         audioSrc: "/es_man.mp3",
@@ -95,7 +97,7 @@ const main = async () => {
       {
         id: 2,
         challengeId: 1,
-        imageSrc: "/woman.svg",
+        imageSrc: "/woman.png",
         correctOption: false,
         text: "la mujer",
         audioSrc: "/es_woman.mp3",
@@ -103,7 +105,7 @@ const main = async () => {
       {
         id: 3,
         challengeId: 1,
-        imageSrc: "/robot.svg",
+        imageSrc: "/robot.png",
         correctOption: false,
         text: "el robot",
         audioSrc: "/es_robot.mp3",
