@@ -90,6 +90,13 @@ const main = async () => {
         order: 2,
         question: '"the man"',
       },
+      {
+        id: 3,
+        lessonId: 1,
+        type: "SELECT",
+        order: 3,
+        question: 'Which one of these is "the robot"?',
+      },
     ]);
 
     await db.insert(schema.challengeOptions).values([
@@ -120,21 +127,46 @@ const main = async () => {
       {
         id: 4,
         challengeId: 2,
-        correctOption: true,
-        text: "el hombre",
-        audioSrc: "/es_man.mp3",
-      },
-      {
-        id: 5,
-        challengeId: 2,
         correctOption: false,
         text: "la mujer",
         audioSrc: "/es_woman.mp3",
       },
       {
+        id: 5,
+        challengeId: 2,
+        correctOption: true,
+        text: "el hombre",
+        audioSrc: "/es_man.mp3",
+      },
+
+      {
         id: 6,
         challengeId: 2,
         correctOption: false,
+        text: "el robot",
+        audioSrc: "/es_robot.mp3",
+      },
+      {
+        id: 7,
+        challengeId: 3,
+        imageSrc: "/man.png",
+        correctOption: false,
+        text: "el hombre",
+        audioSrc: "/es_man.mp3",
+      },
+      {
+        id: 8,
+        challengeId: 3,
+        imageSrc: "/woman.png",
+        correctOption: false,
+        text: "la mujer",
+        audioSrc: "/es_woman.mp3",
+      },
+      {
+        id: 9,
+        challengeId: 3,
+        imageSrc: "/robot.png",
+        correctOption: true,
         text: "el robot",
         audioSrc: "/es_robot.mp3",
       },
