@@ -20,7 +20,9 @@ const ShopPage = async () => {
   }
 
   const isPro = !!userSubscription?.isActive;
-  
+
+  console.log(isPro);
+
   return (
     <div className="flex flex-row-reverse gap-[48px] px-6">
       <StickyWrapper>
@@ -44,7 +46,7 @@ const ShopPage = async () => {
           <Items
             hearts={userProgress.hearts}
             points={userProgress.points}
-            hasActiveSubscription={false}
+            hasActiveSubscription={isPro}
           />
         </div>
       </FeedWrapper>
