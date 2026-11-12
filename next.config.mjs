@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Only small local SVG/PNG assets are used; serving them as-is disables the
+  // /_next/image optimizer endpoint and its known CVEs on Next 14.
+  images: { unoptimized: true },
   async headers() {
     return [
       {
